@@ -6,7 +6,7 @@ import { ScrollSection, StaggerContainer, StaggerItem } from "@/components/anima
 import { NewsCard } from "@/components/NewsCard";
 import { newsItems } from "@/data/newsData";
 import heroNewsImage from "@/assets/hero-news.jpg";
-import { useSearchParams } from "react-router-dom";
+import { useSearchParams, Link } from "react-router-dom";
 import { SEO } from "@/components/SEO";
 
 const News = () => {
@@ -87,13 +87,13 @@ const News = () => {
               Zostań członkiem SITK RP i bierz udział w naszych wyjazdy technicznych, 
               szkoleniach i wydarzeniach branżowych.
             </p>
-            <a
-              href="/czlonkostwo"
+            <Link
+              to="/czlonkostwo"
               className="inline-flex items-center gap-3 bg-gold hover:bg-gold-light text-primary px-8 py-4 rounded-full font-bold text-lg transition-all duration-300 shadow-xl hover:shadow-2xl hover:scale-105"
             >
               Zostań członkiem
               <ArrowRight className="w-5 h-5" />
-            </a>
+            </Link>
           </ScrollSection>
         </div>
       </section>
