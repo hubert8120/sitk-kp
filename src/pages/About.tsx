@@ -323,14 +323,14 @@ const About = () => {
               className="grid gap-4"
             >
               {[
-                { name: "Klub w Koszalinie", leader: "Janusz Komorowski", role: "Przewodniczący" },
                 { name: "Klub przy RDK w Koszalinie", leader: "Dariusz Wesołowski", role: "Przewodniczący" },
+                { name: "Klub w Białogardzie", leader: "Danuta Jarząbek", role: "Przewodnicząca" },
+                { name: "Klub w Chodzieży", leader: "Łukasz Wiśniewski", role: "Przewodniczący" },
+                { name: "Klub w Chojnie", leader: "Mieszko Pająk", role: "Przewodniczący" },
+                { name: "Klub w Drawsku Pomorskim", leader: "Tomasz Martusiewicz", role: "Przewodniczący" },
+                { name: "Klub w Koszalinie", leader: "Janusz Komorowski", role: "Przewodniczący" },
                 { name: "Klub w Starych Bielicach", leader: "Edyta Domek", role: "Przewodnicząca" },
                 { name: "Klub w Szczecinku", leader: "Bronisław Kwardys", role: "Przewodniczący" },
-                { name: "Klub w Chodzieży", leader: "Łukasz Wiśniewski", role: "Przewodniczący" },
-                { name: "Klub w Drawsku Pomorskim", leader: "Tomasz Martusiewicz", role: "Przewodniczący" },
-                { name: "Klub w Białogardzie", leader: "Danuta Jarząbek", role: "Przewodnicząca" },
-                { name: "Klub w Chojnie", leader: "Mieszko Pająk", role: "Przewodniczący" },
               ].map((club, index) => (
                 <motion.div
                   key={club.name}
