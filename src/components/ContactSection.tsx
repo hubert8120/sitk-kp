@@ -156,18 +156,7 @@ export const ContactSection = () => {
                   className="rounded-xl border-border/50 bg-muted/30 h-12"
                 />
               </div>
-              <div>
-                <label htmlFor="subject" className="block text-sm font-semibold text-foreground mb-2">
-                  Temat
-                </label>
-                <Input
-                  id="subject"
-                  name="subject"
-                  required
-                  placeholder="Temat"
-                  className="rounded-xl border-border/50 bg-muted/30 h-12"
-                />
-              </div>
+
               <div>
                 <label htmlFor="message" className="block text-sm font-semibold text-foreground mb-2">
                   Wiadomość
