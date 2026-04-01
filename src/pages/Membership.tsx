@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button";
 import heroMembership from "@/assets/hero-membership.jpg";
 import declarationPdf from "@/assets/Deklaracja członkowska - PRZYSTĄPIENIE.pdf";
 import updatePdf from "@/assets/Deklaracja członkowska - AKTUALIZACJA DANYCH CZŁONKÓW.pdf";
+import statutPdf from "@/assets/Statut SITK RP.pdf";
 import { cn } from "@/lib/utils";
 import { SEO } from "@/components/SEO";
 
@@ -52,7 +53,8 @@ const Membership = () => {
             </p>
             <Button asChild className="gap-2 mt-4">
               <a 
-                href="https://www.sitkrp.org.pl/statut" 
+                href={statutPdf} 
+                download="Statut_SITK_RP.pdf"
                 target="_blank" 
                 rel="noopener noreferrer"
               >

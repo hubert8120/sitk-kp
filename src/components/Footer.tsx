@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 import { Phone, Mail, MapPin, ExternalLink } from "lucide-react";
 import sitkLogo from "@/assets/sitk-logo.png";
+import rodoPdf from "@/assets/news/Informacja_RODO_Oddział w Koszalinie.pdf";
+import statutPdf from "@/assets/Statut SITK RP.pdf";
 
 export const Footer = () => {
   return <footer className="bg-primary text-primary-foreground">
@@ -48,12 +50,6 @@ export const Footer = () => {
                 <Link to="/kontakt" className="text-primary-foreground/80 hover:text-gold-light transition-colors text-sm">
                   Skontaktuj się z nami
                 </Link>
-              </li>
-              <li>
-                <a href="https://www.sitkrp.org.pl/statut" target="_blank" rel="noopener noreferrer" className="text-primary-foreground/80 hover:text-gold-light transition-colors text-sm flex items-center gap-1">
-                  Statut SITK RP
-                  <ExternalLink className="w-3 h-3" />
-                </a>
               </li>
             </ul>
           </div>
@@ -108,7 +104,7 @@ export const Footer = () => {
             <ul className="space-y-3">
               <li>
                 <a 
-                  href="/Informacja_RODO_Oddział_w_Koszalinie.pdf" 
+                  href={rodoPdf} 
                   download="Informacja_RODO_Oddział_w_Koszalinie.pdf" 
                   target="_blank" 
                   rel="noopener noreferrer" 

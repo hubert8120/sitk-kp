@@ -238,19 +238,19 @@ const About = () => {
                 <ul className="space-y-3 text-muted-foreground">
                   <li><span className="font-medium text-foreground">Janusz Komorowski</span> – Prezes Oddziału</li>
                   <li><span className="font-medium text-foreground">Paweł Alejski</span> – Wiceprezes Oddziału</li>
+                  <li><span className="font-medium text-foreground">Tadeusz Kanas</span> – Wiceprezes Oddziału</li>
                   <li><span className="font-medium text-foreground">Wiesław Hołub</span> – Sekretarz</li>
-                  <li><span className="font-medium text-foreground">Marta Muchowska</span> – Skarbnik</li>
+                  <li><span className="font-medium text-foreground">Mieszko Pająk</span> – Skarbnik</li>
                   <li><span className="font-medium text-foreground">Marek Gruszecki</span> – Członek Zarządu</li>
-                  <li><span className="font-medium text-foreground">Szymon Kamiński</span> – Członek Zarządu</li>
-                  <li><span className="font-medium text-foreground">Tadeusz Kanas</span> – Członek Zarządu</li>
                   <li><span className="font-medium text-foreground">Dariusz Wesołowski</span> – Członek Zarządu</li>
                   <li><span className="font-medium text-foreground">Tomasz Wojciechowski</span> – Członek Zarządu</li>
+                  <li><span className="font-medium text-foreground">Łukasz Koryga</span> – Członek Zarządu</li>
                 </ul>
                 <div className="mt-6 pt-4 border-t border-muted">
                   <p className="text-sm text-muted-foreground mb-2 font-medium">Zastępcy Członków Zarządu:</p>
                   <ul className="space-y-2 text-muted-foreground text-sm">
+                    <li><span className="font-medium text-foreground">Barbara Chmielnicka-Osial</span></li>
                     <li><span className="font-medium text-foreground">Norbert Chamier-Gliszczyński</span></li>
-                    <li><span className="font-medium text-foreground">Marcin Pietrzak</span></li>
                   </ul>
                 </div>
               </motion.div>
@@ -267,13 +267,13 @@ const About = () => {
                 </h3>
                 <ul className="space-y-3 text-muted-foreground">
                   <li><span className="font-medium text-foreground">Andrzej Lenartowicz</span> – Przewodniczący Komisji Rewizyjnej</li>
-                  <li><span className="font-medium text-foreground">Marek Ziomek</span> – Wiceprzewodniczący Komisji Rewizyjnej</li>
-                  <li><span className="font-medium text-foreground">Michał Rosa</span> – Członek Komisji Rewizyjnej</li>
+                  <li><span className="font-medium text-foreground">Michał Rosa</span> – Wiceprzewodniczący Komisji Rewizyjnej</li>
+                  <li><span className="font-medium text-foreground">Edyta Domek</span> – Członek Komisji Rewizyjnej</li>
                 </ul>
                 <div className="mt-6 pt-4 border-t border-muted">
                   <p className="text-sm text-muted-foreground mb-2 font-medium">Zastępca Członka Komisji Rewizyjnej:</p>
                   <ul className="space-y-2 text-muted-foreground text-sm">
-                    <li><span className="font-medium text-foreground">Andrzej Lesisz</span></li>
+                    <li><span className="font-medium text-foreground">Jarosław Gębarowski</span></li>
                   </ul>
                 </div>
               </motion.div>
@@ -327,7 +327,7 @@ const About = () => {
                 { name: "Klub przy RDK w Koszalinie", leader: "Dariusz Wesołowski", role: "Przewodniczący" },
                 { name: "Klub w Starych Bielicach", leader: "Edyta Domek", role: "Przewodnicząca" },
                 { name: "Klub w Szczecinku", leader: "Bronisław Kwardys", role: "Przewodniczący" },
-                { name: "Klub w Chodzieży", leader: "Jan Rajek", role: "Przewodniczący" },
+                { name: "Klub w Chodzieży", leader: "Łukasz Wiśniewski", role: "Przewodniczący" },
                 { name: "Klub w Drawsku Pomorskim", leader: "Tomasz Martusiewicz", role: "Przewodniczący" },
                 { name: "Klub w Białogardzie", leader: "Danuta Jarząbek", role: "Przewodnicząca" },
                 { name: "Klub w Chojnie", leader: "Mieszko Pająk", role: "Przewodniczący" },
