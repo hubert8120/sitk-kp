@@ -43,7 +43,7 @@ const Realizacje = () => {
   return (
     <div className="min-h-screen bg-background">
       <SEO
-        title="Modernizacja dróg – realizacje SITK Koszalin"
+        title="Projektowanie i nadzory – realizacje SITK Koszalin"
         description="Portfolio projektów drogowych SITK RP Koszalin: dokumentacja projektowa, przebudowy dróg powiatowych, ścieżki rowerowe i ciągi piesze."
         canonical="/realizacje/modernizacja-drog"
       />
@@ -51,10 +51,10 @@ const Realizacje = () => {
 
       <ParallaxHero
         backgroundImage={heroImage}
-        backgroundAlt="Modernizacja dróg powiatowych"
+        backgroundAlt="Projektowanie i nadzory"
       >
         <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-semibold text-primary-foreground mb-4">
-          Modernizacja dróg powiatowych
+          Projektowanie i nadzory
         </h1>
         <p className="text-white text-lg text-center max-w-2xl mx-auto">
           Kompleksowa modernizacja infrastruktury drogowej z zastosowaniem nowoczesnych technologii

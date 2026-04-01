@@ -9,7 +9,7 @@ const projects = [
   {
     image: constructionImage,
     category: "Budownictwo",
-    title: "Modernizacja dróg powiatowych",
+    title: "Projektowanie i nadzory",
     description: "Kompleksowa modernizacja infrastruktury drogowej z zastosowaniem nowoczesnych technologii.",
     link: "/realizacje/modernizacja-drog",
   },
