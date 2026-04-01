@@ -16,16 +16,38 @@ export const ContactSection = () => {
     e.preventDefault();
     setIsSubmitting(true);
     
-    // Simulate form submission
-    await new Promise(resolve => setTimeout(resolve, 1000));
-    
-    toast({
-      title: "Wiadomość wysłana!",
-      description: "Dziękujemy za kontakt. Odpowiemy najszybciej jak to możliwe.",
-    });
-    
-    setIsSubmitting(false);
-    (e.target as HTMLFormElement).reset();
+    const form = e.target as HTMLFormElement;
+    const formData = new FormData(form);
+    const data = Object.fromEntries(formData.entries());
+
+    try {
+      const response = await fetch("https://hook.eu1.make.com/4ay8mg23mt6f1qsrvb6audfxuopj2vm2", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      });
+
+      if (!response.ok) {
+        throw new Error("Błąd podczas wysyłania wiadomości");
+      }
+
+      toast({
+        title: "Wiadomość wysłana!",
+        description: "Dziękujemy za kontakt. Odpowiemy najszybciej jak to możliwe.",
+      });
+      
+      form.reset();
+    } catch (error) {
+      toast({
+        title: "Wystąpił błąd",
+        description: "Nie udało się wysłać wiadomości. Spróbuj ponownie później.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -117,6 +139,7 @@ export const ContactSection = () => {
             initial={{ opacity: 0, x: 30 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.6, delay: 0.2 }}
+            className="mt-8 lg:mt-12"
           >
             <form onSubmit={handleSubmit} className="bg-card rounded-3xl p-8 md:p-10 space-y-6 shadow-lg">
               <div>
