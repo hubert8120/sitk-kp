@@ -54,7 +54,7 @@ const courses = [
   },
   { 
     title: "Zmiany przepisów techniczno-budowlanych",
-    description: "Zmiany przepisów o warunkach techniczno-budowlanych dotyczących dróg publicznych i ustawy o drogach publicznych.",
+    description: "Aktualne przepisy dotyczące dróg publicznych, w tym m.in. Rozporządzenie Ministra Infrastruktury z dnia 24 czerwca 2022 r. w sprawie przepisów techniczno-budowlanych dotyczących dróg publicznych, t.j. Dz.U. 2022 poz. 1518 ze zm. i Ustawa z dnia 21.03.1985 r. o drogach publicznych, t.j. Dz. U. z 2025 r., poz. 889.",
     icon: BookOpen,
   },
   { 
