@@ -8,12 +8,6 @@ import { SEO } from "@/components/SEO";
 
 const bridgeProjects = [
   {
-    client: "Zarząd Dróg Wojewódzkich w Koszalinie",
-    address: "ul. Szczecińska 31, 75-122 Koszalin",
-    description:
-      "Nadzory inwestorskie nad budową i remontami obiektów inżynierskich w ciągu dróg wojewódzkich na terenie województwa zachodniopomorskiego.",
-  },
-  {
     client: "Gmina Świdwin",
     address: "Pl. Konstytucji 3 Maja 1, 78-300 Świdwin",
     description:
