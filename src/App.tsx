@@ -13,6 +13,7 @@ import Membership from "./pages/Membership";
 import News from "./pages/News";
 import NotFound from "./pages/NotFound";
 import Realizacje from "./pages/Realizacje";
+import BridgeProjects from "./pages/BridgeProjects";
 import Rodo from "./pages/Rodo";
 import ScrollToTop from "./components/ScrollToTop";
 
@@ -34,6 +35,7 @@ const App = () => (
           <Route path="/kontakt" element={<Contact />} />
           <Route path="/czlonkostwo" element={<Membership />} />
           <Route path="/realizacje/modernizacja-drog" element={<Realizacje />} />
+          <Route path="/realizacje/projekty-mostowe" element={<BridgeProjects />} />
           <Route path="/rodo" element={<Rodo />} />
           <Route path="*" element={<NotFound />} />
         </Routes>

@@ -22,7 +22,7 @@ const projects = [
     category: "Infrastruktura",
     title: "Projekty mostowe",
     description: "Realizacja i nadzór nad budową obiektów mostowych na terenie województwa.",
-    link: "/uslugi",
+    link: "/realizacje/projekty-mostowe",
   },
 ];
 

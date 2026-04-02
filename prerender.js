@@ -17,6 +17,7 @@ const routesToPrerender = [
   '/kontakt',
   '/czlonkostwo',
   '/realizacje/modernizacja-drog',
+  '/realizacje/projekty-mostowe',
   '/rodo'
 ]
 
