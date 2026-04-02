@@ -37,6 +37,96 @@ const realizacje = [
     description:
       'Przebudowa ciągu pieszego wzdłuż ulicy Łubuszan w Sianowie w pasie drogowym drogi powiatowej – zgodnie z Umową Nr 19/2021 z 20.07.2021r.',
   },
+  {
+    client: "Gmina Bobolice",
+    address: "ul. Ratuszowa 1, 76-020 Bobolice",
+    description:
+      "Opracowanie kompletnej dokumentacji projektowo - kosztorysowej na realizację zadania pn. „Przebudowa dróg gminnych w m. Bobolice, ulic: Kwiatów Polnych, Słowackiego i Traugutta wraz ze skrzyżowaniami (2021 r.).",
+  },
+  {
+    client: "Miasto Szczecinek",
+    address: "pl. Wolności 13, 78-400 Szczecinek",
+    description:
+      "Wykonanie dokumentacji projektowej odcinka drogi ul. Skowronkowa oraz odcinka drogi ul. Sójcza w Szczecinku (2021 r.).",
+  },
+  {
+    client: "Gmina Świnoujście",
+    address: "ul. Wojska Polskiego 1/5, 72-600 Świnoujście",
+    description:
+      "Rozbudowa układu dróg rowerowych - Połączenie rowerowe pomiędzy ul. Żeromskiego i ul. Moniuszki (2021 r.).",
+  },
+  {
+    client: "Gmina Świnoujście",
+    address: "ul. Wojska Polskiego 1/5, 72-600 Świnoujście",
+    description:
+      "Rozbudowa układu dróg rowerowych - Połączenie rowerowe pomiędzy ul. Konstytucji 3 Maja i ul. Piłsudskiego (2021 r.).",
+  },
+  {
+    client: "Miasto Szczecinek",
+    address: "pl. Wolności 13, 78-400 Szczecinek",
+    description:
+      "Wykonanie kompletnej dokumentacji projektowej drogi gminnej ul. Cichej wraz z przebudową skrzyżowania z drogą wojewódzką nr 172 w Szczecinku (2020 r.).",
+  },
+  {
+    client: "Gmina Biały Bór",
+    address: "ul. Słupska 10, 78-425 Biały Bór",
+    description:
+      "Usługa Projektowa - opracowanie pełnej dokumentacji przebudowy drogi gminnej w miejscowości Biały Dwór (Część I) (2020 r.).",
+  },
+  {
+    client: "Gmina Biały Bór",
+    address: "ul. Słupska 10, 78-425 Biały Bór",
+    description:
+      "Usługa Projektowa - opracowanie pełnej dokumentacji przebudowy drogi gminnej w miejscowości Trzebiele (Część II) (2020 r.).",
+  },
+  {
+    client: "Miasto Białogard",
+    address: "ul. 1 Maja 18, 78-200 Białogard",
+    description:
+      "Wykonanie dokumentacji projektowo - kosztorysowych przebudowy dróg na terenie miasta Białogard: budowa ronda na skrzyżowaniu ulic: Piłsudskiego, Połczyńskiej, Batalionów Chłopskich i Sobieskiego (2020 r.).",
+  },
+  {
+    client: "Gmina Cedynia",
+    address: "Plac Wolności 1, 74-520 Cedynia",
+    description:
+      "Opracowanie dokumentacji projektowej na budowę ścieżki rowerowej (Etap I od Cedyni do drogi powiatowej 1394Z oraz opcjonalny Etap II nasypem kolejowym) (2020 r.).",
+  },
+  {
+    client: "ZIM w Słupsku",
+    address: "ul. Grottgera 13 , 76-200 Słupsk",
+    description:
+      "Wykonanie dokumentacji projektowo-wykonawczej przebudowy chodników w ramach zadania „Program chodnikowy - likwidacja barier architektonicznych” Etap I (2020 r.).",
+  },
+  {
+    client: "Gmina Gościno",
+    address: "Ul. IV Dywizji Wojska Polskiego 58, 78-120 Gościno",
+    description:
+      "Wykonanie projektu budowlanego i wykonawczego budowy drogi ul. Kwiatowej w Gościnie wraz z pełnieniem nadzoru autorskiego (2020 r.).",
+  },
+  {
+    client: "Gmina Miastko",
+    address: "Grunwaldzka 1, 77-200 Miastko",
+    description:
+      "Pełnienie funkcji nadzoru inwestorskiego nad przebudową alei głównej na cmentarzu komunalnym w Miastku (2020 r.).",
+  },
+  {
+    client: "Gmina Świnoujście",
+    address: "ul. Wojska Polskiego 1/5, 72-600 Świnoujście",
+    description:
+      "Koncepcja ulic dla obszaru zlokalizowanego w rejonie ulic Grunwaldzkiej i Nowokarsiborskiej w Świnoujściu (2019 r.).",
+  },
+  {
+    client: "Gmina Barwice",
+    address: "ul. Zwycięzców 22, 78-460 Barwice",
+    description:
+      "Opracowanie kompleksowej dokumentacji projektowej budowlano-wykonawczej na budowę drogi do m. Uradz z włączeniem do drogi wojewódzkiej nr 171 (2019 r.).",
+  },
+  {
+    client: "Gmina Kalisz Pomorski",
+    address: "ul. Wolności 25, 78-540 Kalisz Pomorski",
+    description:
+      "Pełnienie funkcji inspektora nadzoru inwestorskiego w specjalności drogowej przy budowie ulicy Świerkowej w Kaliszu Pomorskim (2019 r.).",
+  },
 ];
 
 const Realizacje = () => {
