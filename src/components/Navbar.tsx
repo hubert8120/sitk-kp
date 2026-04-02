@@ -54,8 +54,8 @@ export const Navbar = () => {
               }
             }}
           >
-            <img 
-              src={sitkLogo} 
+            <img width={604} height={615} loading="lazy" 
+              src={sitkLogo} srcSet={`${sitkLogo} 1x, ${sitkLogo} 2x`} 
               alt="SITK RP Oddział w Koszalinie" 
               className="w-12 h-12 rounded-full shadow-lg transition-transform duration-200 hover:scale-105"
             />

@@ -171,8 +171,8 @@ const Membership = () => {
       {/* Hero Section */}
       <section className="min-h-[70vh] flex items-end justify-center pb-16 relative overflow-hidden">
         <div className="absolute inset-0">
-          <img
-            src={heroMembership}
+          <img width={1920} height={1080} loading="lazy"
+            src={heroMembership} srcSet={`${heroMembership} 1x, ${heroMembership} 2x`}
             alt="Spotkanie profesjonalistów"
             className="w-full h-full object-cover"
           />

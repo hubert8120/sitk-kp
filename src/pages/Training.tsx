@@ -1,9 +1,10 @@
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { motion } from "framer-motion";
-import { GraduationCap, BookOpen, Shield, Wrench, FileCheck, Scale, HardHat, Route, Layers, Ruler, Building, Gavel } from "lucide-react";
+import { GraduationCap, BookOpen, Shield, Wrench, FileCheck, Scale, HardHat, Route, Layers, Ruler, Building, Gavel, Mail } from "lucide-react";
 import heroTrainingImage from "@/assets/hero-training.jpg";
 import { SEO } from "@/components/SEO";
+import { Link } from "react-router-dom";
 
 const courses = [
   { 
@@ -90,7 +91,7 @@ const Training = () => (
     <section className="py-24 bg-muted/30">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <span className="text-gold uppercase tracking-widest text-sm font-medium">2022 – 2025</span>
+          <span className="text-gold uppercase tracking-widest text-sm font-medium">Centrum Szkoleniowe</span>
           <h2 className="font-serif text-3xl md:text-4xl font-bold text-foreground mb-4 mt-2">Nasza oferta szkoleniowa</h2>
           <p className="text-muted-foreground max-w-3xl mx-auto">
             Centrum Szkolenia i Doskonalenia Kadr Oddziału SITK RP w Koszalinie organizuje szkolenia zawodowe dla pracowników administracji i wykonawstwa drogowego.
@@ -127,7 +128,7 @@ const Training = () => (
             <h3 className="font-serif text-2xl md:text-3xl font-bold text-primary-foreground mb-2">
               Podsumowanie działalności szkoleniowej
             </h3>
-            <p className="text-primary-foreground/70">W okresie 2022 – 2025</p>
+            <p className="text-primary-foreground/70">Kadencja 2022 – 2025</p>
           </div>
           
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
@@ -141,6 +142,38 @@ const Training = () => (
             Wszystkie szkolenia zakończone wydaniem odpowiednich Certyfikatów i uprawnień.
           </p>
         </motion.div>
+
+        {/* CTA */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.2 }}
+          className="mt-16 max-w-3xl mx-auto text-center"
+        >
+          <div className="relative rounded-3xl overflow-hidden border border-gold/20 bg-gradient-to-br from-card via-card to-gold/5 p-10 md:p-14 shadow-2xl shadow-gold/5">
+            <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_rgba(212,175,55,0.08),_transparent_70%)]" />
+            <div className="relative z-10">
+              <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-gold/20 to-gold/5 border border-gold/20 flex items-center justify-center mx-auto mb-6">
+                <Mail className="w-7 h-7 text-gold" aria-hidden="true" />
+              </div>
+              <h3 className="font-serif text-2xl md:text-3xl font-bold text-foreground mb-3">
+                Zainteresowany szkoleniem?
+              </h3>
+              <p className="text-muted-foreground text-base mb-8 leading-relaxed max-w-xl mx-auto">
+                Skontaktuj się z nami, aby dowiedzieć się więcej o ofercie szkoleniowej, terminach i warunkach uczestnictwa.
+                Odpowiemy na każde pytanie.
+              </p>
+              <Link
+                to="/kontakt"
+                className="inline-flex items-center gap-3 px-8 py-4 rounded-xl bg-gradient-to-r from-gold to-gold/80 text-primary font-semibold text-sm tracking-wide shadow-lg shadow-gold/20 hover:shadow-xl hover:shadow-gold/30 hover:scale-105 transition-all duration-300"
+              >
+                <Mail className="w-4 h-4" />
+                Napisz do nas
+              </Link>
+            </div>
+          </div>
+        </motion.div>
+
       </div>
     </section>
     <Footer />

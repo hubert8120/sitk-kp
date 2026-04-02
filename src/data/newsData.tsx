@@ -1,5 +1,8 @@
 import type { NewsItem } from "@/components/NewsCard";
 
+import walneZebranie1 from "@/assets/news/walne-zebranie-2026-1.jpg";
+import walneZebranie2 from "@/assets/news/walne-zebranie-2026-2.jpg";
+import walneZebranie3 from "@/assets/news/walne-zebranie-2026-3.jpg";
 import parisMontmartre from "@/assets/news/paris-montmartre.jpg";
 import parisVersailles from "@/assets/news/paris-versailles.jpg";
 import viennaChurch from "@/assets/news/vienna-church.jpg";
@@ -26,8 +29,8 @@ const ForumDescription = () => (
       w infrastrukturze drogowo-mostowej"
     </p>
 
-    <img
-      src={forumPoster}
+    <img width={1916} height={1165} loading="lazy"
+      src={forumPoster} srcSet={`${forumPoster} 1x, ${forumPoster} 2x`}
       alt="Plakat konferencji XXIV Forum Drogownictwa Zachodniopomorskiego"
       className="w-full max-w-3xl mx-auto rounded-2xl shadow-lg"
     />
@@ -39,8 +42,8 @@ const ForumDescription = () => (
       infrastrukturze drogowo-mostowej".
     </p>
 
-    <img
-      src={forumDay1}
+    <img width={1920} height={1080} loading="lazy"
+      src={forumDay1} srcSet={`${forumDay1} 1x, ${forumDay1} 2x`}
       alt="Program konferencji - Dzień 1"
       className="w-full max-w-3xl mx-auto rounded-2xl shadow-lg"
     />
@@ -78,13 +81,13 @@ const ForumDescription = () => (
     </p>
 
     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-      <img
-        src={forumDay2}
+      <img width={1920} height={1080} loading="lazy"
+        src={forumDay2} srcSet={`${forumDay2} 1x, ${forumDay2} 2x`}
         alt="Program konferencji - Dzień 2"
         className="w-full rounded-2xl shadow-lg"
       />
-      <img
-        src={forumDay3}
+      <img width={1920} height={1080} loading="lazy"
+        src={forumDay3} srcSet={`${forumDay3} 1x, ${forumDay3} 2x`}
         alt="Program konferencji - Dzień 3"
         className="w-full rounded-2xl shadow-lg"
       />
@@ -117,8 +120,8 @@ const MakroregionDescription = () => (
       RP z Polski oraz przedyskutowano kierunki rozwoju dalszej działalności SITK RP.
     </p>
 
-    <img
-      src={makroregionDay1}
+    <img width={1046} height={768} loading="lazy"
+      src={makroregionDay1} srcSet={`${makroregionDay1} 1x, ${makroregionDay1} 2x`}
       alt="Program spotkania - Dzień 1 (17.09.2025)"
       className="w-full max-w-3xl mx-auto rounded-2xl shadow-lg"
     />
@@ -141,14 +144,14 @@ const MakroregionDescription = () => (
       <li>Współpraca z uczelniami i organami samorządowymi, inne</li>
     </ul>
 
-    <img
-      src={makroregionDay2}
+    <img width={1166} height={915} loading="lazy"
+      src={makroregionDay2} srcSet={`${makroregionDay2} 1x, ${makroregionDay2} 2x`}
       alt="Program spotkania - Dzień 2 (18.09.2025)"
       className="w-full max-w-3xl mx-auto rounded-2xl shadow-lg"
     />
 
-    <img
-      src={makroregionDay3}
+    <img width={1175} height={893} loading="lazy"
+      src={makroregionDay3} srcSet={`${makroregionDay3} 1x, ${makroregionDay3} 2x`}
       alt="Program spotkania - Dzień 3 (19.09.2025)"
       className="w-full max-w-3xl mx-auto rounded-2xl shadow-lg"
     />
@@ -227,7 +230,90 @@ const MakroregionDescription = () => (
   </div>
 );
 
+const WalneZebraniaDescription = () => (
+  <div className="space-y-6">
+    <h3 className="font-serif text-xl md:text-2xl text-foreground font-bold leading-snug">
+      Walne Zwyczajne Zebranie sprawozdawczo-wyborcze Delegatów Oddziału SITK RP w Koszalinie
+    </h3>
+
+    <p>
+      W dniu 27.02.2026 r. odbyło się Walne Zwyczajne Zebranie sprawozdawczo-wyborcze Delegatów
+      Oddziału SITK RP w Koszalinie, na którym Zarząd Oddziału przedstawił delegatom oraz członkom Komisji
+      Rewizyjnej i przewodniczącym klubów sprawozdanie z działalności Oddziału w kadencji 2022– 2025 r.
+    </p>
+
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <img loading="lazy"
+        src={walneZebranie1} srcSet={`${walneZebranie1} 1x, ${walneZebranie1} 2x`}
+        width={4000} height={2252}
+        alt="Walne Zebranie Delegatów SITK RP w Koszalinie 2026 – obrady"
+        className="w-full rounded-2xl shadow-lg object-cover"
+        style={{ objectPosition: '85% center' }}
+      />
+      <img loading="lazy"
+        src={walneZebranie2} srcSet={`${walneZebranie2} 1x, ${walneZebranie2} 2x`}
+        width={4000} height={2252}
+        alt="Wanie Zebranie SITK RP 2026 – wręczenie odznaczeń"
+        className="w-full rounded-2xl shadow-lg object-cover"
+      />
+    </div>
+
+    <p>
+      Ustępujący Zarząd, w drodze głosowania uzyskał jednogłośnie absolutorium od delegatów.
+      W drodze głosowania wybrano Prezesa Oddziału, którym na kolejną kadencję został{" "}
+      <strong>Janusz Komorowski</strong>. Delegaci wybrali również nowy skład Zarządu Oddziału,
+      skład Komisji Rewizyjnej Oddziału oraz swoich delegatów na XXXIV Zwyczajny Walny Zjazd
+      Delegatów SITK RP, który odbędzie się w dniach 11–12.05.2026 r. w Warszawie.
+    </p>
+
+    <p>
+      Prezes Oddziału przedstawił plany działalności statutowej na rok 2026, w tym przede wszystkim:
+    </p>
+    <ul className="list-disc pl-6 space-y-1">
+      <li><strong>18–22.05.2026</strong> – wyjazd techniczny do Tuchowa (wizyta w firmie WIMED) i Rzeszowa</li>
+      <li><strong>12–14.06.2026</strong> – 30. Piknik Techniczny w Mielnie (organizowany przez Klub w Koszalinie)</li>
+      <li><strong>I połowa września</strong> – wycieczka techniczna do krajów Beneluksu</li>
+      <li><strong>30.09–02.10.2026</strong> – XXV Forum Drogownictwa Województwa Zachodniopomorskiego</li>
+      <li>Spływ kajakowy organizowany przez Klub w Szczecinku</li>
+    </ul>
+
+    <img loading="lazy"
+      src={walneZebranie3} srcSet={`${walneZebranie3} 1x, ${walneZebranie3} 2x`}
+      width={4000} height={2252}
+      alt="Walne Zebranie SITK RP 2026 – wręczenie tytułów Zasłużony Senior"
+      className="w-full max-w-2xl mx-auto rounded-2xl shadow-lg"
+    />
+
+    <p>
+      Podczas Zebrania wręczono czterem członkom Oddziału{" "}
+      <strong>Srebrne Odznaczenia SITK RP</strong>, a także uhonorowano czworo z naszych członków
+      tytułami <strong>Zasłużony Senior SITK RP</strong>.
+    </p>
+  </div>
+);
+
 export const newsItems: NewsItem[] = [
+  {
+    id: "walne-zebranie-2026",
+    title: "Walne Zwyczajne Zebranie sprawozdawczo-wyborcze Delegatów",
+    date: "27 lutego 2026",
+    location: "Koszalin",
+    participants: 40,
+    category: "wydarzenie",
+    images: [walneZebranie1, walneZebranie2, walneZebranie3],
+    shortDescription: "Walne Zebranie Delegatów Oddziału SITK RP w Koszalinie podsumowujące kadencję 2022–2025. Wybrano nowy Zarząd, Prezesa Janusza Komorowskiego oraz delegatów na Zjazd SITK RP w Warszawie.",
+    fullDescription: <WalneZebraniaDescription />,
+    highlights: [
+      "Absolutorium dla ustępującego Zarządu",
+      "Reelekcja Prezesa J. Komorowskiego",
+      "Nowy skład Zarządu i Komisji Rewizyjnej",
+      "Srebrne Odznaczenia SITK RP ×4",
+      "Tytuł Zasłużony Senior SITK RP ×4",
+      "Plany na rok 2026"
+    ],
+    imagePositions: ["85% center", undefined, undefined]
+  },
+
   {
     id: "forum-2025",
     title: "XXIV Forum Drogownictwa Zachodniopomorskiego",

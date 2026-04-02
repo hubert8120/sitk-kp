@@ -62,7 +62,7 @@ const Contact = () => (
           
           <div className="w-full max-w-5xl h-[400px] md:h-[500px] overflow-hidden rounded-3xl border border-muted/30 shadow-2xl relative bg-muted/10">
             <iframe 
-              src="https://maps.google.com/maps?q=56MW%2BW4%20Koszalin+(Kupiecka%205,%2075-671%20Koszalin)&t=k&z=16&ie=UTF8&iwloc=&output=embed" 
+              src="https://maps.google.com/maps?q=56MW%2BW4%20Koszalin+(Kupiecka%205,%2075-671%20Koszalin)&t=k&z=16&ie=UTF8&iwloc=&output=embed" srcSet="https://maps.google.com/maps?q=56MW%2BW4%20Koszalin+(Kupiecka%205,%2075-671%20Koszalin)&t=k&z=16&ie=UTF8&iwloc=&output=embed 1x, https://maps.google.com/maps?q=56MW%2BW4%20Koszalin+(Kupiecka%205,%2075-671%20Koszalin)&t=k&z=16&ie=UTF8&iwloc=&output=embed 2x" 
               width="100%" 
               height="100%" 
               style={{ border: 0 }} 

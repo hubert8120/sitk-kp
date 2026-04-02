@@ -8,6 +8,8 @@ import bridgeImage from "@/assets/bridge-project.jpg";
 const projects = [
   {
     image: constructionImage,
+    imageWidth: 1024,
+    imageHeight: 1024,
     category: "Budownictwo",
     title: "Projektowanie i nadzory",
     description: "Kompleksowa modernizacja infrastruktury drogowej z zastosowaniem nowoczesnych technologii.",
@@ -15,6 +17,8 @@ const projects = [
   },
   {
     image: bridgeImage,
+    imageWidth: 1024,
+    imageHeight: 1024,
     category: "Infrastruktura",
     title: "Projekty mostowe",
     description: "Realizacja i nadzór nad budową obiektów mostowych na terenie województwa.",
@@ -52,8 +56,9 @@ export const FeaturedProjects = () => {
               className="group relative overflow-hidden rounded-3xl"
             >
               <div className="aspect-[4/3] overflow-hidden rounded-3xl">
-                <img
-                  src={project.image}
+                <img loading="lazy"
+                  src={project.image} srcSet={`${project.image} 1x, ${project.image} 2x`}
+                  width={project.imageWidth} height={project.imageHeight}
                   alt={`Realizacja SITK: ${project.title}`}
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 />

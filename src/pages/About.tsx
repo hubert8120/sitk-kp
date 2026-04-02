@@ -40,8 +40,8 @@ const About = () => {
         className="min-h-[70vh] flex items-end justify-center pb-16 relative overflow-hidden"
       >
         <div className="absolute inset-0">
-          <img 
-            src={heroAbout} 
+          <img width={1920} height={1080} loading="lazy" 
+            src={heroAbout} srcSet={`${heroAbout} 1x, ${heroAbout} 2x`} 
             alt="Siedziba SITK RP Oddział w Koszalinie" 
             className="w-full h-full object-cover"
           />
@@ -122,8 +122,8 @@ const About = () => {
               className="relative"
             >
               <div className="aspect-[4/3] overflow-hidden rounded-3xl">
-                <img
-                  src={aboutJourney}
+                <img width={1024} height={768} loading="lazy"
+                  src={aboutJourney} srcSet={`${aboutJourney} 1x, ${aboutJourney} 2x`}
                   alt="Historia SITK RP – działalność od 1952 roku"
                   className="w-full h-full object-cover"
                 />
@@ -182,8 +182,8 @@ const About = () => {
             transition={{ duration: 0.8, delay: 0.3, ease: "easeOut" }}
             className="overflow-hidden rounded-3xl"
           >
-            <img
-              src={aboutOffice}
+            <img width={1920} height={1080} loading="lazy"
+              src={aboutOffice} srcSet={`${aboutOffice} 1x, ${aboutOffice} 2x`}
               alt="Biuro SITK RP w Koszalinie przy ul. Kupieckiej 5"
               className="w-full h-[400px] md:h-[500px] object-cover"
             />

@@ -24,8 +24,8 @@ const News = () => {
       {/* Hero Section */}
       <section className="min-h-[70vh] flex items-end justify-center pb-16 relative overflow-hidden">
         <div className="absolute inset-0">
-          <img 
-            src={heroNewsImage} 
+          <img width={1920} height={1080} loading="lazy" 
+            src={heroNewsImage} srcSet={`${heroNewsImage} 1x, ${heroNewsImage} 2x`} 
             alt="Aktualności SITK" 
             className="w-full h-full object-cover"
           />

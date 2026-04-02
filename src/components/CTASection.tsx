@@ -16,8 +16,8 @@ export const CTASection = () => {
     >
       {/* Background image */}
       <div className="absolute inset-0">
-        <img
-          src={ctaBackground}
+        <img width={1920} height={1024} loading="lazy"
+          src={ctaBackground} srcSet={`${ctaBackground} 1x, ${ctaBackground} 2x`}
           alt="Inżynierowie drogowi podczas pracy terenowej"
           className="w-full h-full object-cover"
         />

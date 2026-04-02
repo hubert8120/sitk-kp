@@ -42,8 +42,9 @@ export const NewsPreview = () => {
               className="group relative overflow-hidden rounded-3xl"
             >
               <div className="aspect-[4/3] overflow-hidden rounded-3xl">
-                <img
-                  src={news.image}
+                <img loading="lazy"
+                  src={news.image} srcSet={`${news.image} 1x, ${news.image} 2x`}
+                  width={1920} height={1080}
                   alt={news.title}
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 />

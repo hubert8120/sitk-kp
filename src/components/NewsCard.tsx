@@ -40,8 +40,9 @@ export const NewsCard = ({ item, defaultExpanded = false }: { item: NewsItem; de
                 key={imgIndex}
                 className="flex-1 relative overflow-hidden"
               >
-                <img
-                  src={img}
+                <img loading="lazy"
+                  src={img} srcSet={`${img} 1x, ${img} 2x`}
+                  width={1920} height={1080}
                   alt={`${item.title} - zdjęcie ${imgIndex + 1}`}
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                   style={item.imagePositions?.[imgIndex] ? { objectPosition: item.imagePositions[imgIndex] } : undefined}

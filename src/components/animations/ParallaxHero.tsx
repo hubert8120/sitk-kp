@@ -43,8 +43,9 @@ export const ParallaxHero = ({
     return (
       <section ref={ref} className={`relative h-screen min-h-[700px] flex items-center justify-center overflow-hidden ${className}`}>
         <div className="absolute inset-0">
-          <img 
-            src={backgroundImage} 
+          <img loading="lazy" 
+            src={backgroundImage} srcSet={`${backgroundImage} 1x, ${backgroundImage} 2x`} 
+            width={1920} height={1080}
             alt={backgroundAlt} 
             className="w-full h-full object-cover" 
           />
@@ -68,8 +69,9 @@ export const ParallaxHero = ({
         className="absolute inset-0"
         style={{ y: backgroundY }}
       >
-        <img 
-          src={backgroundImage} 
+        <img loading="lazy" 
+          src={backgroundImage} srcSet={`${backgroundImage} 1x, ${backgroundImage} 2x`} 
+          width={1920} height={1080}
           alt={backgroundAlt} 
           className="w-full h-full object-cover scale-110" 
         />

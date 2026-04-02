@@ -35,4 +35,10 @@ const routesToPrerender = [
     fs.writeFileSync(toAbsolute(filePath), html)
     console.log('pre-rendered:', filePath)
   }
+
+  // Pre-render 404 page as /404.html for Apache ErrorDocument
+  const notFoundHtml = render('/404-not-found');
+  const notFoundPage = template.replace('<!--app-html-->', notFoundHtml)
+  fs.writeFileSync(toAbsolute('dist/404.html'), notFoundPage)
+  console.log('pre-rendered: dist/404.html')
 })()

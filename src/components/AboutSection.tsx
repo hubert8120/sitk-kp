@@ -20,8 +20,8 @@ export const AboutSection = () => {
             <div className="relative">
               {/* Main image container */}
               <div className="aspect-[4/3] overflow-hidden rounded-3xl">
-                <img
-                  src={constructionImage}
+                <img width={1024} height={672} loading="lazy"
+                  src={constructionImage} srcSet={`${constructionImage} 1x, ${constructionImage} 2x`}
                   alt="Budowa infrastruktury drogowej"
                   className="w-full h-full object-cover"
                 />
