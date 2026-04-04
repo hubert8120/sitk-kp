@@ -45,7 +45,7 @@ const Rodo = () => {
                 <ol className="list-decimal list-inside space-y-1 ml-2">
                   <li>członkowie Oddziału SITK RP w Koszalinie oraz rzeczoznawcy SITK RP za pośrednictwem zarządów swoich macierzystych kół i klubów,</li>
                   <li>członkowie Zarządu Oddziału SITK RP w Koszalinie,</li>
-                  <li>strona internetowa www.koszalin.sitk.eu</li>
+                  <li>strona internetowa sitkkoszalin.pl</li>
                 </ol>
                 <p className="mt-2">
                   <span className="font-semibold text-foreground">Do wiadomości:</span> Zarząd Krajowy SITK RP
@@ -76,7 +76,7 @@ const Rodo = () => {
                   <li>
                     W przypadku, gdy nie akceptują Państwo powyższych zmian zasad prosimy o poinformowanie nas o tym w sposób opisany poniżej. Przesłanie rezygnacji będzie skutkowało usunięciem danych z naszej bazy. We wszystkich sprawach związanych z przetwarzaniem przez SITK Koszalin Państwa danych osobowych, mogą Państwo się kontaktować w następujący sposób:
                     <ol className="list-[lower-alpha] list-outside ml-6 mt-2 space-y-1">
-                      <li>za pośrednictwem poczty e-mail na adres: <a href="mailto:biuro@koszalin.sitk.eu" className="text-primary hover:underline">biuro@koszalin.sitk.eu</a> w temacie wpisując RODO;</li>
+                      <li>za pośrednictwem poczty e-mail na adres: <a href="mailto:biuro@sitkkoszalin.pl" className="text-primary hover:underline">biuro@sitkkoszalin.pl</a> w temacie wpisując RODO;</li>
                       <li>za pośrednictwem poczty tradycyjnej na adres: Stowarzyszenie Inżynierów i Techników Komunikacji Rzeczpospolitej Polskiej Oddział w Koszalinie, ul. Kupiecka 5, 75-671 Koszalin</li>
                     </ol>
                   </li>

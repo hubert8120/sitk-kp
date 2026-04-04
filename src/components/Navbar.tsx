@@ -131,9 +131,9 @@ export const Navbar = () => {
                     <Phone className="w-4 h-4" />
                     <span>(94) 34 55 266</span>
                   </a>
-                  <a href="mailto:biuro@koszalin.sitk.eu" className="flex items-center gap-2 text-muted-foreground hover:text-primary">
+                  <a href="mailto:biuro@sitkkoszalin.pl" className="flex items-center gap-2 text-muted-foreground hover:text-primary">
                     <Mail className="w-4 h-4" />
-                    <span>biuro@koszalin.sitk.eu</span>
+                    <span>biuro@sitkkoszalin.pl</span>
                   </a>
                 </div>
               </div>

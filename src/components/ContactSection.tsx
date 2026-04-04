@@ -51,7 +51,7 @@ export const ContactSection = () => {
   };
 
   return (
-    <section ref={ref} className="py-24 bg-background">
+    <section id="contact-form" ref={ref} className="py-24 bg-background">
       <div className="container mx-auto px-6">
         <div className="grid lg:grid-cols-2 gap-16">
           {/* Contact Info */}
@@ -110,10 +110,10 @@ export const ContactSection = () => {
                 <div>
                   <h4 className="font-semibold text-foreground mb-1">E-mail</h4>
                   <a 
-                    href="mailto:biuro@koszalin.sitk.eu" 
+                    href="mailto:biuro@sitkkoszalin.pl" 
                     className="text-muted-foreground hover:text-primary transition-colors"
                   >
-                    biuro@koszalin.sitk.eu
+                    biuro@sitkkoszalin.pl
                   </a>
                 </div>
               </div>

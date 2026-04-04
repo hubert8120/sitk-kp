@@ -9,7 +9,7 @@ const Contact = () => (
   <main className="min-h-screen">
     <SEO
       title="Kontakt – SITK RP Oddział w Koszalinie"
-      description="Skontaktuj się z SITK RP Koszalin: ul. Kupiecka 5, tel. (94) 34 55 266, biuro@koszalin.sitk.eu. Godziny pracy: pon-pt 8:00-16:00."
+      description="Skontaktuj się z SITK RP Koszalin: ul. Kupiecka 5, tel. (94) 34 55 266, biuro@sitkkoszalin.pl. Godziny pracy: pon-pt 8:00-16:00."
       canonical="/kontakt"
     />
     <Navbar />
@@ -62,7 +62,7 @@ const Contact = () => (
           
           <div className="w-full max-w-5xl h-[400px] md:h-[500px] overflow-hidden rounded-3xl border border-muted/30 shadow-2xl relative bg-muted/10">
             <iframe 
-              src="https://maps.google.com/maps?q=56MW%2BW4%20Koszalin+(Kupiecka%205,%2075-671%20Koszalin)&t=k&z=16&ie=UTF8&iwloc=&output=embed" srcSet="https://maps.google.com/maps?q=56MW%2BW4%20Koszalin+(Kupiecka%205,%2075-671%20Koszalin)&t=k&z=16&ie=UTF8&iwloc=&output=embed 1x, https://maps.google.com/maps?q=56MW%2BW4%20Koszalin+(Kupiecka%205,%2075-671%20Koszalin)&t=k&z=16&ie=UTF8&iwloc=&output=embed 2x" 
+              src="https://maps.google.com/maps?q=56MW%2BW4%20Koszalin+(Kupiecka%205,%2075-671%20Koszalin)&t=k&z=16&ie=UTF8&iwloc=&output=embed" 
               width="100%" 
               height="100%" 
               style={{ border: 0 }} 

@@ -164,7 +164,7 @@ const Training = () => (
                 Odpowiemy na każde pytanie.
               </p>
               <Link
-                to="/kontakt"
+                to="/kontakt#contact-form"
                 className="inline-flex items-center gap-3 px-8 py-4 rounded-xl bg-gradient-to-r from-gold to-gold/80 text-primary font-semibold text-sm tracking-wide shadow-lg shadow-gold/20 hover:shadow-xl hover:shadow-gold/30 hover:scale-105 transition-all duration-300"
               >
                 <Mail className="w-4 h-4" />
