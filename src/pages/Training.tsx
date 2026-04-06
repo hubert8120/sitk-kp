@@ -171,7 +171,7 @@ const Training = () => (
                 {/* Orbital Elements */}
                 {/* Inner Orbit (Spinning) */}
                 <div className="absolute w-[280px] h-[280px]" style={{ animation: 'spin 30s linear infinite' }}>
-                  <div className="absolute -top-6 left-1/2 -translate-x-1/2 w-12 h-12 bg-[#1A2542] rounded-full border border-indigo-400/50 flex items-center justify-center shadow-lg" style={{ animation: 'spin 30s linear infinite reverse' }}>
+                  <div className="absolute -top-6.5 left-1/2 -translate-x-1/2 w-13 h-13 bg-[#1A2542] rounded-full border border-indigo-400/50 flex items-center justify-center shadow-lg" style={{ animation: 'spin 30s linear infinite reverse' }}>
                     <GraduationCap className="w-6 h-6 text-indigo-400" />
                   </div>
                 </div>
@@ -179,19 +179,19 @@ const Training = () => (
                 {/* Middle Orbit (Reverse Spinning) */}
                 <div className="absolute w-[460px] h-[460px]" style={{ animation: 'spin 45s linear infinite reverse' }}>
                   {/* Icon perfectly on the ring line: placed top-center */}
-                  <div className="absolute -top-7 left-1/2 -translate-x-1/2 w-14 h-14 bg-[#1A2542] rounded-full border border-blue-400/50 flex items-center justify-center shadow-xl" style={{ animation: 'spin 45s linear infinite' }}>
-                    <Users className="w-7 h-7 text-blue-400" />
+                  <div className="absolute -top-6.5 left-1/2 -translate-x-1/2 w-13 h-13 bg-[#1A2542] rounded-full border border-blue-400/50 flex items-center justify-center shadow-xl" style={{ animation: 'spin 45s linear infinite' }}>
+                    <Users className="w-6 h-6 text-blue-400" />
                   </div>
                   {/* Icon perfectly on the ring line: placed bottom-center */}
-                  <div className="absolute -bottom-6 left-1/2 -translate-x-1/2 w-12 h-12 bg-[#1A2542] rounded-full border border-purple-400/50 flex items-center justify-center shadow-xl" style={{ animation: 'spin 45s linear infinite' }}>
-                    <FileCheck className="w-5 h-5 text-purple-400" />
+                  <div className="absolute -bottom-6.5 left-1/2 -translate-x-1/2 w-13 h-13 bg-[#1A2542] rounded-full border border-purple-400/50 flex items-center justify-center shadow-xl" style={{ animation: 'spin 45s linear infinite' }}>
+                    <FileCheck className="w-6 h-6 text-purple-400" />
                   </div>
                 </div>
 
                 {/* Outer Orbit (Spinning Slow) */}
                 <div className="absolute w-[640px] h-[640px]" style={{ animation: 'spin 60s linear infinite' }}>
                   {/* Icon perfectly on the ring line: placed bottom-center */}
-                  <div className="absolute -bottom-7 left-1/2 -translate-x-1/2 w-14 h-14 bg-[#1A2542] rounded-full border border-blue-500/40 flex items-center justify-center shadow-xl" style={{ animation: 'spin 60s linear infinite reverse' }}>
+                  <div className="absolute -bottom-6.5 left-1/2 -translate-x-1/2 w-13 h-13 bg-[#1A2542] rounded-full border border-blue-500/40 flex items-center justify-center shadow-xl" style={{ animation: 'spin 60s linear infinite reverse' }}>
                     <BookOpen className="w-6 h-6 text-blue-400" />
                   </div>
                 </div>
