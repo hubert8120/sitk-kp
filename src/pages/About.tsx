@@ -32,6 +32,10 @@ const About = () => {
         title="O nas – Historia i władze SITK RP Koszalin"
         description="Poznaj historię Oddziału SITK RP w Koszalinie, działającego od 1952 roku. Władze, kluby, wartości i 283 członków organizacji drogowej."
         canonical="/o-nas"
+        breadcrumbs={[
+          { name: "Strona główna", item: "/" },
+          { name: "O nas", item: "/o-nas" }
+        ]}
       />
       <Navbar />
       

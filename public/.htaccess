@@ -1,22 +1,11 @@
+ErrorDocument 404 /404.html
+
 <IfModule mod_rewrite.c>
   RewriteEngine On
   RewriteBase /
-
-  # Redirect www to non-www (301 permanent)
-  RewriteCond %{HTTP_HOST} ^www\.sitkkoszalin\.pl [NC]
-  RewriteRule ^(.*)$ https://sitkkoszalin.pl/$1 [R=301,L]
-
-  # SPA routing
   RewriteRule ^index\.html$ - [L]
   RewriteCond %{REQUEST_FILENAME} !-f
   RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_FILENAME} !-l
   RewriteRule . /index.html [L]
 </IfModule>
-
-# HSTS – HTTP Strict Transport Security
-<IfModule mod_headers.c>
-  Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
-</IfModule>
-
-# Custom 404 error page
-ErrorDocument 404 /404.html

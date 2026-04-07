@@ -11,6 +11,10 @@ const Services = () => (
       title="Usługi drogowe – projekty i nadzory inwestorskie"
       description="Usługi z zakresu drogownictwa: projekty drogowe, nadzory inwestorskie, doradztwo techniczne, szkolenia BHP. SITK RP Oddział w Koszalinie."
       canonical="/uslugi"
+      breadcrumbs={[
+        { name: "Strona główna", item: "/" },
+        { name: "Usługi", item: "/uslugi" }
+      ]}
     />
     <Navbar />
     <section 

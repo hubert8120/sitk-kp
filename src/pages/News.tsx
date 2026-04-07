@@ -18,6 +18,10 @@ const News = () => {
         title="Aktualności – wyjazdy i wydarzenia SITK"
         description="Najnowsze wyjazdy techniczne, forum drogownictwa i wydarzenia branżowe organizowane przez SITK RP Oddział w Koszalinie."
         canonical="/aktualnosci"
+        breadcrumbs={[
+          { name: "Strona główna", item: "/" },
+          { name: "Aktualności", item: "/aktualnosci" }
+        ]}
       />
       <Navbar />
       

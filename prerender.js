@@ -23,8 +23,10 @@ const routesToPrerender = [
 
 ;(async () => {
   for (const url of routesToPrerender) {
-    const appHtml = render(url);
-    const html = template.replace('<!--app-html-->', appHtml)
+    const { html: appHtml, head: appHead } = render(url);
+    const html = template
+      .replace('<!--app-html-->', appHtml)
+      .replace('<!--app-head-->', appHead)
 
     const filePath = url === '/' ? 'dist/index.html' : `dist${url}/index.html`
     
@@ -38,8 +40,10 @@ const routesToPrerender = [
   }
 
   // Pre-render 404 page as /404.html for Apache ErrorDocument
-  const notFoundHtml = render('/404-not-found');
-  const notFoundPage = template.replace('<!--app-html-->', notFoundHtml)
+  const { html: notFoundHtml, head: notFoundHead } = render('/404-not-found');
+  const notFoundPage = template
+    .replace('<!--app-html-->', notFoundHtml)
+    .replace('<!--app-head-->', notFoundHead)
   fs.writeFileSync(toAbsolute('dist/404.html'), notFoundPage)
   console.log('pre-rendered: dist/404.html')
 })()

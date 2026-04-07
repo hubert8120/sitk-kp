@@ -14,9 +14,12 @@ const Index = () => {
   return (
     <main className="min-h-screen">
       <SEO
-        title="SITK RP Koszalin – Szkolenia i usługi drogowe"
-        description="Stowarzyszenie Inżynierów i Techników Komunikacji RP Oddział w Koszalinie. Szkolenia drogowe, doradztwo techniczne i nadzory inwestorskie od 1952 roku."
+        title="SITK RP Oddział w Koszalinie – Szkolenia i Usługi Branży Drogowej"
+        description="SITK RP (Stowarzyszenie Inżynierów i Techników Komunikacji) Oddział w Koszalinie. Profesjonalne szkolenia drogowe, doradztwo techniczne i nadzory inwestorskie od 1952 roku."
         canonical="/"
+        breadcrumbs={[
+          { name: "Strona główna", item: "/" }
+        ]}
       />
       <Navbar />
       <Hero />

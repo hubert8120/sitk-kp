@@ -75,6 +75,10 @@ const Training = () => (
       title="Szkolenia drogowe – kursy BHP i nawierzchni"
       description="Profesjonalne szkolenia dla branży drogowej: BHP, nawierzchnie, prawo zamówień publicznych. 48 szkoleń, 861 przeszkolonych osób. SITK RP Koszalin."
       canonical="/szkolenia"
+      breadcrumbs={[
+        { name: "Strona główna", item: "/" },
+        { name: "Szkolenia", item: "/szkolenia" }
+      ]}
     />
     <Navbar />
     <section

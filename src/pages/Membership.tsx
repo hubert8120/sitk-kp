@@ -165,6 +165,10 @@ const Membership = () => {
         title="Członkostwo – dołącz do SITK RP Koszalin"
         description="Zostań członkiem SITK RP w Koszalinie. Statut, deklaracje członkowskie, składki – 10 zł/mc. Dołącz do 283 inżynierów i techników."
         canonical="/czlonkostwo"
+        breadcrumbs={[
+          { name: "Strona główna", item: "/" },
+          { name: "Członkostwo", item: "/czlonkostwo" }
+        ]}
       />
       <Navbar />
       
