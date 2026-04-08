@@ -68,11 +68,11 @@ export const Footer = () => {
               <li className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-gold-light flex-shrink-0" />
                 <div className="text-sm">
-                  <a href="tel:+48943455266" className="text-primary-foreground/80 hover:text-gold-light transition-colors block">
-                    (94) 34 55 266
+                  <a href="tel:+48509366661" className="text-primary-foreground/80 hover:text-gold-light transition-colors block">
+                    509 366 661
                   </a>
-                  <a href="tel:+48943424001" className="text-primary-foreground/80 hover:text-gold-light transition-colors block">
-                    (94) 34 24 001
+                  <a href="tel:+48696991006" className="text-primary-foreground/80 hover:text-gold-light transition-colors block">
+                    696 991 006
                   </a>
                 </div>
               </li>

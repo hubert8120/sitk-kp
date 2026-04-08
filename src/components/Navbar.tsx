@@ -127,9 +127,13 @@ export const Navbar = () => {
                   </Link>
                 ))}
                 <div className="pt-4 border-t border-border space-y-2">
-                  <a href="tel:+48943455266" className="flex items-center gap-2 text-muted-foreground hover:text-primary">
+                  <a href="tel:+48509366661" className="flex items-center gap-2 text-muted-foreground hover:text-primary">
                     <Phone className="w-4 h-4" />
-                    <span>(94) 34 55 266</span>
+                    <span>509 366 661</span>
+                  </a>
+                  <a href="tel:+48696991006" className="flex items-center gap-2 text-muted-foreground hover:text-primary">
+                    <Phone className="w-4 h-4" />
+                    <span>696 991 006</span>
                   </a>
                   <a href="mailto:biuro@sitkkoszalin.pl" className="flex items-center gap-2 text-muted-foreground hover:text-primary">
                     <Mail className="w-4 h-4" />

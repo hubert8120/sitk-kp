@@ -92,12 +92,12 @@ export const ContactSection = () => {
                 <div>
                   <h4 className="font-semibold text-foreground mb-1">Telefon</h4>
                   <p className="text-muted-foreground">
-                    <a href="tel:+48943455266" className="hover:text-primary transition-colors">
-                      (94) 34 55 266
+                    <a href="tel:+48509366661" className="hover:text-primary transition-colors">
+                      509 366 661
                     </a>
                     <br />
-                    <a href="tel:+48943424001" className="hover:text-primary transition-colors">
-                      (94) 34 24 001
+                    <a href="tel:+48696991006" className="hover:text-primary transition-colors">
+                      696 991 006
                     </a>
                   </p>
                 </div>

@@ -52,13 +52,13 @@ export const SEO = ({ title, description, canonical, type = "website", breadcrum
       "contactPoint": [
         {
           "@type": "ContactPoint",
-          "telephone": "+48 94 345 52 66",
+          "telephone": "+48 509 366 661",
           "contactType": "office",
           "email": "biuro@sitkkoszalin.pl"
         },
         {
           "@type": "ContactPoint",
-          "telephone": "+48 94 342 40 01",
+          "telephone": "+48 696 991 006",
           "contactType": "office"
         }
       ]
@@ -75,7 +75,7 @@ export const SEO = ({ title, description, canonical, type = "website", breadcrum
         "postalCode": "75-671",
         "addressCountry": "PL"
       },
-      "telephone": "+48 94 345 52 66",
+      "telephone": "+48 509 366 661, +48 696 991 006",
       "url": BASE_URL,
       "priceRange": "N/A"
     },

@@ -9,7 +9,7 @@ const Contact = () => (
   <main className="min-h-screen">
     <SEO
       title="Kontakt – SITK RP Oddział w Koszalinie"
-      description="Skontaktuj się z SITK RP Koszalin: ul. Kupiecka 5, tel. (94) 34 55 266, biuro@sitkkoszalin.pl. Godziny pracy: pon-pt 8:00-16:00."
+      description="Skontaktuj się z SITK RP Koszalin: ul. Kupiecka 5, tel. 509 366 661 lub 696 991 006, biuro@sitkkoszalin.pl. Godziny pracy: pon-pt 8:00-16:00."
       canonical="/kontakt"
       breadcrumbs={[
         { name: "Strona główna", item: "/" },
