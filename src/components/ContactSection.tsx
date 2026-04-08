@@ -11,6 +11,7 @@ export const ContactSection = () => {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
   const { toast } = useToast();
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [honeypot, setHoneypot] = useState("");
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -18,6 +19,46 @@ export const ContactSection = () => {
     
     const form = e.target as HTMLFormElement;
     const formData = new FormData(form);
+    
+    // Honeypot check
+    if (formData.get("website_url") || honeypot) {
+      console.log("Bot detected");
+      // Silently "succeed" so bots think they were successful
+      setTimeout(() => {
+        setIsSubmitting(false);
+        form.reset();
+        toast({
+          title: "Wiadomość wysłana!",
+          description: "Dziękujemy za kontakt. Odpowiemy najszybciej jak to możliwe.",
+        });
+      }, 1000);
+      return;
+    }
+
+    const phone = formData.get("phone") as string;
+    const message = formData.get("message") as string;
+
+    // Enhanced client-side validation
+    if (phone && !/^[+0-9\s-]{9,}$/.test(phone)) {
+      toast({
+        title: "Błędny numer telefonu",
+        description: "Wprowadź poprawny numer telefonu (min. 9 cyfr).",
+        variant: "destructive",
+      });
+      setIsSubmitting(false);
+      return;
+    }
+
+    if (message.length < 10) {
+      toast({
+        title: "Wiadomość za krótka",
+        description: "Twoja wiadomość musi mieć co najmniej 10 znaków.",
+        variant: "destructive",
+      });
+      setIsSubmitting(false);
+      return;
+    }
+
     const data = Object.fromEntries(formData.entries());
 
     try {
@@ -142,6 +183,18 @@ export const ContactSection = () => {
             className="mt-8 lg:mt-12"
           >
             <form onSubmit={handleSubmit} className="bg-card rounded-3xl p-8 md:p-10 space-y-6 shadow-lg">
+              {/* Honeypot field - hidden from users */}
+              <div className="hidden" aria-hidden="true">
+                <Input
+                  type="text"
+                  name="website_url"
+                  tabIndex={-1}
+                  autoComplete="off"
+                  value={honeypot}
+                  onChange={(e) => setHoneypot(e.target.value)}
+                />
+              </div>
+
               <div>
                 <label htmlFor="name" className="block text-sm font-semibold text-foreground mb-2">
                   Imię i nazwisko
