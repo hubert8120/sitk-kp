@@ -66,11 +66,11 @@ const Contact = () => (
           
           <div className="w-full max-w-5xl h-[400px] md:h-[500px] overflow-hidden rounded-3xl border border-muted/30 shadow-2xl relative bg-muted/10">
             <iframe 
-              src="https://maps.google.com/maps?q=56MW%2BW4%20Koszalin+(Kupiecka%205,%2075-671%20Koszalin)&t=k&z=16&ie=UTF8&iwloc=&output=embed" 
+              src="https://maps.google.com/maps?q=Generalna%20Dyrekcja%20Dr%C3%B3g%20Krajowych%20i%20Autostrad%20Koszalin%20Kupiecka%205&t=k&z=17&ie=UTF8&iwloc=&output=embed"
               width="100%" 
               height="100%" 
               style={{ border: 0 }} 
-              allowFullScreen={false} 
+              allowFullScreen={true} 
               loading="lazy" 
               referrerPolicy="no-referrer-when-downgrade"
               title="Siedziba SITK RP Oddział w Koszalinie"
