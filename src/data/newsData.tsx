@@ -18,6 +18,51 @@ import makroregionKarykatury from "@/assets/news/makroregion-karykatury.jpg";
 import makroregionDay1 from "@/assets/news/makroregion-day1.jpg";
 import makroregionDay2 from "@/assets/news/makroregion-day2.jpg";
 import makroregionDay3 from "@/assets/news/makroregion-day3.jpg";
+import wimedImage from "@/assets/news/WIMED 2.jpg";
+
+const WimedTripDescription = () => (
+  <div className="space-y-6">
+    <h3 className="font-serif text-xl md:text-2xl text-foreground font-bold leading-snug">
+      Informacja o planowanym wyjeździe technicznym
+    </h3>
+
+    <p>
+      W dniach 17 - 23 maja 2026r. planowany jest wyjazd techniczny dla wszystkich członków naszego Oddziału.
+    </p>
+
+    <p>
+      Na zaproszenie firmy <strong>WIMED Sp. z o.o. Sp.k. z Tuchowa</strong> będziemy mogli zwiedzić siedzibę jednej z najbardziej liczących się polskich firm związanych z bezpieczeństwem na drogach, której produkty są cenione w całej Europie. Poznamy, z bezpośredniej relacji, tajniki projektowania oraz produkcji elementów BRD, z których słynie firma WIMED.
+    </p>
+
+    <figure className="max-w-3xl mx-auto my-8">
+      <img loading="lazy"
+        src={wimedImage} srcSet={`${wimedImage} 1x, ${wimedImage} 2x`}
+        alt="Siedziba firmy WIMED"
+        className="w-full rounded-2xl shadow-lg object-cover"
+      />
+      <figcaption className="text-sm text-muted-foreground mt-3 text-center">źródło: https://www.google.com/maps</figcaption>
+    </figure>
+
+    <p>
+      Dla naszych uczestników przedstawiciele firmy <strong>EUROVIA Polska S.A.</strong> zaprezentują i omówią powstanie i budowę jednego ze swoich najnowszych pomysłów, instalację <strong>Power Road®</strong> w Ropczycach.
+    </p>
+    
+    <p>
+      Ponadto, podczas wyjazdu planowane jest spotkanie z przedstawicielami krajowej i samorządowej administracji drogowej w Rzeszowie oraz wizyty na budowach drogowych woj. podkarpackiego.
+    </p>
+
+    <p>
+      Oczywiście nie zabraknie również części turystycznej, w której uczestnicy odwiedzą najbardziej znane atrakcje turystyczne Rzeszowa, Tarnowa i okolic.
+    </p>
+
+    <div className="pt-6 relative">
+      <div className="absolute inset-0 bg-gold/10 blur-xl rounded-full" />
+      <p className="relative font-bold text-gradient text-center text-xl md:text-2xl pt-4">
+        Serdecznie zapraszamy do udziału w wyjeździe!
+      </p>
+    </div>
+  </div>
+);
 
 const ForumDescription = () => (
   <div className="space-y-6">
@@ -293,6 +338,24 @@ const WalneZebraniaDescription = () => (
 );
 
 export const newsItems: NewsItem[] = [
+  {
+    id: "wimed-trip-2026",
+    title: "Planowany wyjazd techniczny - WIMED, Tuchów, Rzeszów",
+    date: "17 - 23 maja 2026",
+    location: "Tuchów, Rzeszów, Tarnów",
+    participants: 0,
+    category: "wyjazd",
+    images: [wimedImage],
+    shortDescription: "Informacja o planowanym wyjeździe technicznym dla wszystkich członków naszego Oddziału. Odwiedzimy firmę WIMED, zapoznamy się z instalacją Power Road® w Ropczycach oraz spotkamy się z administracją drogową.",
+    fullDescription: <WimedTripDescription />,
+    highlights: [
+      "Wizyta w siedzibie WIMED Sp. z o.o.",
+      "Prezentacja instalacji Power Road®",
+      "Spotkanie z administracją drogową",
+      "Wizyty na budowach drogowych",
+      "Atrakcje Rzeszowa i Tarnowa"
+    ]
+  },
   {
     id: "walne-zebranie-2026",
     title: "Walne Zwyczajne Zebranie sprawozdawczo-wyborcze Delegatów",
