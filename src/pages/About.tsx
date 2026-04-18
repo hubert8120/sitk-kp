@@ -5,7 +5,7 @@ import { Footer } from "@/components/Footer";
 import { CTASection } from "@/components/CTASection";
 import { Users, Award, Building2, Calendar } from "lucide-react";
 import heroAbout from "@/assets/hero-about.jpg";
-import aboutJourney from "@/assets/about-journey.jpg";
+import aboutJourney from "@/assets/about-us-new.jpg";
 import aboutOffice from "@/assets/about-office.jpg";
 import { SEO } from "@/components/SEO";
 
