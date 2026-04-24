@@ -73,10 +73,12 @@ export const NewsCard = ({ item, defaultExpanded = false }: { item: NewsItem; de
                 <MapPin className="w-4 h-4" />
                 {item.location}
               </span>
-              <span className="flex items-center gap-2">
-                <Users className="w-4 h-4" />
-                {item.participants} uczestników
-              </span>
+              {item.participants > 0 && (
+                <span className="flex items-center gap-2">
+                  <Users className="w-4 h-4" />
+                  {item.participants} uczestników
+                </span>
+              )}
             </div>
           </div>
         </div>

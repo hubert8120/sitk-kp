@@ -1,4 +1,6 @@
 import type { NewsItem } from "@/components/NewsCard";
+import posiedzenieImage from "@/assets/news/posiedzenie-szczecinek.jpg";
+import banerImage from "@/assets/news/baner.jpg";
 
 import walneZebranie1 from "@/assets/news/walne-zebranie-2026-1.jpg";
 import walneZebranie2 from "@/assets/news/walne-zebranie-2026-2.jpg";
@@ -59,6 +61,41 @@ const WimedTripDescription = () => (
       <div className="absolute inset-0 bg-gold/10 blur-xl rounded-full" />
       <p className="relative font-bold text-gradient text-center text-xl md:text-2xl pt-4">
         Serdecznie zapraszamy do udziału w wyjeździe!
+      </p>
+    </div>
+  </div>
+);
+
+const PosiedzenieSzczecinekDescription = () => (
+  <div className="space-y-6">
+    <h3 className="font-serif text-xl md:text-2xl text-foreground font-bold leading-snug">
+      Plenarne posiedzenie członków Zarządu Oddziału SITK RP w Koszalinie w dniu 22.04.2026 r. w Szczecinku.
+    </h3>
+
+    <p>
+      W dniu 22.04.2026 r. w Szczecinku, odbyło się planarne posiedzenie członków Zarządu Oddziału SITK RP w Koszalinie, z udziałem Prezesa i Wiceprezesa Oddziału, na którym wraz z przedstawicielami Zarządu Klubu w Szczecinku uroczyście wręczono wyróżnienie "Zasłużony Senior SITK RP" kol. Andrzejowi Urbanowiczowi, wieloletniemu członkowi Klubu w Szczecinku, który jednocześnie jest najstarszym członkiem naszego Oddziału (piękne 91 lat).
+    </p>
+
+    <figure className="max-w-3xl mx-auto my-8">
+      <img loading="lazy"
+        src={posiedzenieImage} srcSet={`${posiedzenieImage} 1x, ${posiedzenieImage} 2x`}
+        alt="Plenarne posiedzenie Zarządu Oddziału SITK RP w Szczecinku"
+        className="w-full rounded-2xl shadow-lg object-cover"
+        style={{ objectPosition: 'center 20%' }}
+      />
+      <figcaption className="text-sm text-muted-foreground mt-3 text-center">
+        Uroczyste wręczenie wyróżnienia "Zasłużony Senior SITK RP" kol. Andrzejowi Urbanowiczowi
+      </figcaption>
+    </figure>
+
+    <p>
+      W imieniu całego Zarządu Oddziału SITK RP w Koszalinie życzymy kol. Andrzejowi dużo zdrowia i niegasnącego zapału do udzielania się w działaniach naszego stowarzyszenia! 
+    </p>
+    
+    <div className="pt-6 relative">
+      <div className="absolute inset-0 bg-gold/10 blur-xl rounded-full" />
+      <p className="relative font-bold text-gradient text-center text-xl md:text-2xl pt-4">
+        100 lat Panie Andrzeju!
       </p>
     </div>
   </div>
@@ -354,6 +391,23 @@ export const newsItems: NewsItem[] = [
       "Spotkanie z administracją drogową",
       "Wizyty na budowach drogowych",
       "Atrakcje Rzeszowa i Tarnowa"
+    ]
+  },
+  {
+    id: "posiedzenie-szczecinek-2026",
+    title: "Plenarne posiedzenie członków Zarządu Oddziału SITK RP w Koszalinie",
+    date: "22 kwietnia 2026",
+    location: "Szczecinek",
+    participants: 0,
+    category: "wydarzenie",
+    images: [banerImage],
+    shortDescription: 'W dniu 22.04.2026 r. w Szczecinku odbyło się plenarne posiedzenie członków Zarządu Oddziału SITK RP w Koszalinie, podczas którego wręczono wyróżnienie "Zasłużony Senior SITK RP" kol. Andrzejowi Urbanowiczowi.',
+    fullDescription: <PosiedzenieSzczecinekDescription />,
+    highlights: [
+      "Plenarne posiedzenie Zarządu",
+      "Wręczenie wyróżnienia Zasłużony Senior",
+      "91 lat najstarszego członka",
+      "Wizyta w Szczecinku"
     ]
   },
   {
