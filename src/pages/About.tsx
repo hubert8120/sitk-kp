@@ -13,7 +13,7 @@ import { SEO } from "@/components/SEO";
 const stats = [
   { value: "1952", label: "Rok założenia" },
   { value: "283", label: "Członków" },
-  { value: "8", label: "Klubów" },
+  { value: "9", label: "Klubów" },
   { value: "70+", label: "Lat doświadczenia" },
 ];
 

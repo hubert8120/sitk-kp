@@ -6,7 +6,7 @@ import constructionImage from "@/assets/about-construction-site.jpg";
 const stats = [
   { icon: Calendar, value: "1952", label: "Rok założenia" },
   { icon: Users, value: "283", label: "Członków" },
-  { icon: Building2, value: "8", label: "Klubów" },
+  { icon: Building2, value: "9", label: "Klubów" },
   { icon: Award, value: "70+", label: "Lat doświadczenia" },
 ];
 
