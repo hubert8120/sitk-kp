@@ -10,6 +10,7 @@ const previewNews = newsItems.slice(0, 2).map((item) => ({
   date: item.date,
   category: item.category,
   image: item.images[0],
+  imagePosition: item.imagePositions?.[0],
 }));
 
 export const NewsPreview = () => {
@@ -47,6 +48,7 @@ export const NewsPreview = () => {
                   width={1920} height={1080}
                   alt={news.title}
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  style={news.imagePosition ? { objectPosition: news.imagePosition } : undefined}
                 />
               </div>
               <div className="absolute inset-0 bg-gradient-to-t from-foreground/90 via-foreground/20 to-transparent rounded-3xl" />

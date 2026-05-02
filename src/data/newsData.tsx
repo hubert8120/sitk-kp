@@ -1,6 +1,7 @@
 import type { NewsItem } from "@/components/NewsCard";
 import posiedzenieImage from "@/assets/news/posiedzenie-szczecinek.jpg";
 import banerImage from "@/assets/news/baner.jpg";
+import marekzImage from "@/assets/news/marekz.jpg";
 
 import walneZebranie1 from "@/assets/news/walne-zebranie-2026-1.jpg";
 import walneZebranie2 from "@/assets/news/walne-zebranie-2026-2.jpg";
@@ -21,6 +22,41 @@ import makroregionDay1 from "@/assets/news/makroregion-day1.jpg";
 import makroregionDay2 from "@/assets/news/makroregion-day2.jpg";
 import makroregionDay3 from "@/assets/news/makroregion-day3.jpg";
 import wimedImage from "@/assets/news/WIMED 2.jpg";
+
+const MarekZiomekDescription = () => (
+  <div className="space-y-6">
+    <h3 className="font-serif text-xl md:text-2xl text-foreground font-bold leading-snug">
+      Pożegnanie Kol. Marka Ziomka
+    </h3>
+
+    <p>
+      Z głębokim żalem i smutkiem zawiadamiamy, że w dniu dzisiejszym odszedł od nas Śp. <strong>Marek Ziomek</strong>.
+    </p>
+
+    <p>
+      Nasz serdeczny Kolega, wieloletni członek Stowarzyszenia Inżynierów i Techników Komunikacji RP, oddany działacz Klubu w Szczecinku.
+    </p>
+
+    <p>
+      Zapamiętamy Go jako człowieka życzliwego, zaangażowanego i zawsze gotowego do niesienia pomocy innym. Jego wiedza, doświadczenie oraz pogoda ducha na zawsze pozostaną w naszej pamięci.
+    </p>
+
+    <p>
+      Rodzinie i Bliskim składamy wyrazy głębokiego współczucia.
+    </p>
+
+    <div className="pt-6 relative">
+      <div className="absolute inset-0 bg-gold/10 blur-xl rounded-full" />
+      <p className="relative font-bold text-gradient text-center text-xl md:text-2xl pt-4">
+        Cześć Jego pamięci.
+      </p>
+    </div>
+
+    <p className="text-sm text-muted-foreground italic pt-4">
+      Zarząd Oddziału Stowarzyszenia Inżynierów i Techników Komunikacji RP w Koszalinie
+    </p>
+  </div>
+);
 
 const WimedTripDescription = () => (
   <div className="space-y-6">
@@ -375,6 +411,24 @@ const WalneZebraniaDescription = () => (
 );
 
 export const newsItems: NewsItem[] = [
+  {
+    id: "marek-ziomek-wspomnienie",
+    title: "Pożegnanie Kol. Marka Ziomka",
+    date: "2 maja 2026",
+    location: "Klub w Szczecinku",
+    participants: 0,
+    category: "informacja",
+    images: [marekzImage],
+    imagePositions: ["center 35%"],
+    shortDescription: "Z głębokim żalem zawiadamiamy, że odszedł od nas Śp. Marek Ziomek, nasz serdeczny Kolega, wieloletni członek SITK RP i oddany działacz Klubu w Szczecinku.",
+    fullDescription: <MarekZiomekDescription />,
+    highlights: [
+      "Wieloletni członek SITK RP",
+      "Działacz Klubu w Szczecinku",
+      "Człowiek życzliwy i zaangażowany",
+      "Jego pamięć zostanie w naszych sercach"
+    ]
+  },
   {
     id: "wimed-trip-2026",
     title: "Planowany wyjazd techniczny - WIMED, Tuchów, Rzeszów",

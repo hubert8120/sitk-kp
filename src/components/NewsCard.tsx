@@ -9,7 +9,7 @@ export interface NewsItem {
   date: string;
   location: string;
   participants: number;
-  category: "wyjazd" | "wydarzenie";
+  category: "wyjazd" | "wydarzenie" | "informacja";
   images: string[];
   imagePositions?: (string | undefined)[];
   shortDescription: string;
@@ -55,7 +55,7 @@ export const NewsCard = ({ item, defaultExpanded = false }: { item: NewsItem; de
           {/* Category Badge */}
           <div className="absolute top-6 left-6 z-10">
             <span className="px-4 py-2 rounded-full bg-gold text-primary text-sm font-bold uppercase tracking-wider shadow-lg">
-              {item.category === "wyjazd" ? "Wyjazd techniczny" : "Wydarzenie"}
+              {item.category === "wyjazd" ? "Wyjazd techniczny" : item.category === "informacja" ? "Informacja" : "Wydarzenie"}
             </span>
           </div>
 
